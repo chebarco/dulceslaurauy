@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:white;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background: #ffa8cd;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+ul {
+    list-style: none;
+    
+    }
+
+ .input-filter{
+     text-align: center;
+     margin-top: 20px;
+ }   
+
+ 
+ /*-------esto son los producos----------------*/
+
+
+
+#lista-chocolates.row{
+    background-color:white;
+    padding-top: 50px;
+}
+
+
+.card {
+    border-radius: 40px ;
+width: 70%;
+ text-align: center;
+color: aliceblue;
+background-color: #ffa8cd;
+margin-top: 50px;
+box-shadow: #999 5px 5px 5px;
+margin-left: 50px;
+}
+
+
+.imagen-platillo{
+    border-radius: 40px 40px 0 0 ;
+
+}
+
+.info-card{
+        border-radius: 30px;
+    font-weight: bold;
+}
+
+
+.button-primary{
+    border-radius: 30px ;
+    width: 80%;
+   
+
+}
+/*esto son los estilos del carrito de compras*/
+
+
+.submenu #carrito{
+display: none;
+}
+.submenu:hover #carrito{
+display: block;
+color: white;
+position: absolute;
+right: 0px;
+top: 100%;
+z-index: 1;
+background-color: #ffa8cd;
+padding: 20px;
+}
+.vacio {
+padding: 10px;
+background-color: indigo;
+text-align: center;
+border-radius: 10px;
+color: rgb(255, 255, 255);
+}
+.button {
+background-color: mediumslateblue;
+color: rgb(255, 255, 255);
+border-radius: 10px;
+border: none;
+}
+
+.nav{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+
+
+
+/*esto es la parte de redes sociales*/
+#media{
+    background-color:#ffa8cd;
+    text-align: center;
+}
+#media ul li{
+    display: inline;
+}
+
+
+#media{
+    margin-top: 100px;
+      background-color: #ffa8cd;
+      padding-bottom: 10px;
+   padding-top: 40px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width:768px){
+.card{
+    width: 70%;
+    margin-left: 110px;
+}
+  .imagen-platillo{
+    border-radius: 40px 40px 0 0 ;
+
+}
+
+.info-card{
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.button-primary{
+    border-radius: 30px ;
+}
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------*/
+ @media (min-width:1024px){
+
+    a{
+        color:blueviolet;
+        font-weight: bold;
+    }
+    a:hover{
+        color: blueviolet;
+        font-weight: bold;
+
+    }
+    .borrar-producto {
+        background-color: black;
+        border-radius: 50%;
+        padding: 5px 10px;
+        text-decoration: none;
+        color:rgb(71, 71, 71);
+        font-weight: bold;
+    
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    h2{
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+  
+    .header{
+        display: inline-block;
+    }
+   .submenu:hover #carrito{
+    display: block;
+    color: white;
+   
+    background-color: #ffa8cd;
+    padding: 20px;
+    }
+    .vacio {
+    padding: 10px;
+    background-color: indigo;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    }
+    .button {
+    background-color: mediumslateblue;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    }
+      
+        
+/*esto son los prodcutos de la tienda*/
+
+.four.columns {
+    width: 100%;
+    
+}
+
+
+#lista-chocolates{
+    display: grid; 
+grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: repeat(3, 1fr); 
+grid-column-gap: 0px;
+grid-row-gap: 0px; 
+}
+ #lista-chocolates.row{
+        background-color:white;
+        padding-top: 50px;
+        margin-bottom: 20px;
+
+    }
+    
+
+.agregar-carrito{
+margin: 10px 0;
+}
+
+.imagen-platillo{
+    border-radius: 30px 30px 0 0 ;
+
+}
+
+.info-card{
+        border-radius: 30px;
+}
+
+.card {
+    width: 80%;
+    border-radius: 30px  ;
+    text-align: center;
+   color: aliceblue;
+   background-color: #ffa8cd;
+   box-shadow: #999 5px 5px 5px;
+   margin-left: 30px;
+
+   }
+
+.card h4{
+    font-size: 18px;
+}
+
+
+/*esto son las redes sociales*/
+
+    #media{
+        width: 100%;
+        margin-top: 100px;
+        background-color: #ffa8cd;
+        padding-bottom: 10px;
+        padding-top: 40px;
+        
+    }
+    #media ul li{
+        display: inline;
+
+    }
+  
+    #media img{
+    margin-left: 60px;    
+} 
+
+
+.button-primary{
+        border-radius: 30px ;
+        width: 80%;
+    
+}
+ 
+
+.buscar{
+    display: flex;
+}
+
+.input-filter{
+    margin-top: 40px;
+    margin-left: 450px;
+}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+

@@ -1,0 +1,721 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../imagenes/fondo.png);
+}
+header  h1{
+    font-size: 24px;
+    text-align: center;
+    color: plum;
+}
+
+header h2{
+    font-size: 16px;
+    padding-top:3.125rem;
+    padding-bottom: 1.25rem;
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+   
+}
+
+#galeria{
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(1, 1fr); 
+    text-align: center;
+    background-color: rgb(250, 227, 231);
+}
+#sobre-mi{
+    width: 300px;
+    margin: 0 auto;
+    background-color: white;
+ 
+
+}
+
+#sobre-mi{
+    padding-bottom: 50px;
+}
+#sobre-mi .misclases, .mispasteles, .tienda-online{
+    padding-top: 3.125rem;
+    line-height: 24px ;
+}
+
+#sobre-mi .caradepapa, .mispasteles p{
+    margin-left: 0.625rem;
+    width: 95%;
+    line-height: 24px ;
+
+  
+}
+
+#clases{
+    background-color: rgb(250, 153, 242);
+}
+#clases h2{
+text-align: center;
+padding-top: 1.25rem;
+color: white;
+font-size: 24px;
+}
+
+#clases p{
+    margin-left:0.625rem ;
+    padding-bottom: 1.25rem;
+    color: white;
+}
+
+
+
+footer{
+    background-color: rgba(212, 212, 212, 0.479);
+    color: rgb(250, 153, 242);
+    font-size: 16px;
+text-align: center;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+footer li{
+    list-style: none;
+}
+
+#contacto{
+    background-color: #faeee7;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+#contacto form {
+    width: 95%;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 6.25rem;
+    
+  }
+
+  #contacto h2{
+      text-align: center;
+      color: #594a4e;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 5.625rem;
+  }
+  
+  input,
+  textarea {
+    
+    font: 1em sans-serif;
+    width: 95%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+      height: 5em;
+  }
+  
+
+  .clases{
+  background-image: linear-gradient(rgb(250, 153, 242), white)
+  }
+ 
+#clases .clases p{
+    color: #594a4e;
+}
+
+.textos{
+    width: 85%;
+    font-size: 12.8px;
+    line-height: 19.2px ;
+}
+#clases h4{
+    margin-left: 20px;
+}
+
+#clases p{
+    margin-left: 20px;
+
+    width: 90%;
+    font-size: 12.8px;
+}
+
+#clases .img-fluid{
+    text-align: center;
+    width: 100%;
+}
+
+#clases .numeros{
+    margin-left: 20px;
+    border: solid;
+    border-color: #33272a;
+    width: 1.875rem;
+    height: 1.875rem;
+    text-align: center;
+    border-radius: 3.125rem;
+    font-size: 16px;
+}
+
+.nosotras h4{
+    margin-left: 0.9375rem;
+}
+
+
+
+#header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+  
+}
+
+.navbar-sm div{
+    background-color: rgb(250, 153, 242);
+    display: flex;
+    flex-direction: none;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.navbar-md{
+    display: none;
+}
+
+
+.mi-menu{
+    display: none;
+    background-color: rgb(250, 153, 242);
+    
+    
+}
+.mi-menu:target{
+    display: block;
+    
+}
+
+.mi-menu li{
+    transition: 0.3s;
+}
+
+.mi-menu ul li a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mi-menu ul li a:hover{
+    color:#232946;
+    
+}
+
+.mi-menu.activado{
+    display: flex;
+}
+
+.fotorama{
+   padding-top: 100px;
+}
+.ham{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+ .ham span{
+ display: block;
+ background-color: white;
+ height: 3px;
+ width: 18px;
+ margin: 10px auto;
+ border-radius: 2px;
+ 
+ 
+ }
+
+/*---------------------------------------------movil tamaño medio ---------------------------------------------*/
+
+
+
+@media (min-width:560px) {
+    .container {
+        width:33.75rem;
+       
+    }
+    .navbar-sm div{
+        background-color: rgb(250, 153, 242);
+    }
+
+    #mi-menu{
+        background-color: rgb(250, 153, 242);
+        
+        
+    }
+ h1{
+        font-size: 24px;
+        text-align: center;
+        color: #8bd3dd;
+    }
+    
+    #kit h2{
+        font-size: 16px;
+        padding-top:3.125rem;
+        padding-bottom: 1.25rem;
+    }
+    
+    #kit{
+        width: 500px;
+        margin: 0 auto;
+    }
+    #galeria{
+        background-color: #8bd3dd;
+    }
+    
+  #kit  .casco, .guantes, .anteojos, .parches, .inflador, .calzas, .img-fluid{
+        padding-top: 3.125rem;
+        text-align: center;
+    }
+  
+    #kit   p{
+        padding-top: 3.125rem;
+        text-align: left;
+        margin-left: 0.625rem;
+        margin-right: 1.25rem;
+    }
+   
+    #clases{
+        background-color: #b8c1ec;
+    }
+ 
+    
+   
+    
+    footer{
+        background-color: #faeee7;
+        color: rgb(250, 153, 242);
+        font-size: 16px;
+        padding-bottom: 3.125rem;
+    }
+    
+    footer li{
+        list-style: none;
+    }
+    
+    #contacto{
+        background-color: #faeee7;
+        padding-top: 3.125rem;
+    }
+    #contacto form {
+        margin: 0 auto;
+        width: 90%;
+        padding: 1em;
+        border: 0.0625rem solid #CCC;
+        border-radius: 1em;
+        
+      }
+    
+      .nosotras{
+        background-image: linear-gradient(#b8c1ec, white)
+      }
+     
+ #clases .nosotras p{
+    margin-left: 0.9375rem;
+    margin-right: 1.25rem;
+ }
+ .social-media ul li{
+    display: inline;
+}  
+   
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------tablet---------------------------------------------*/
+@media (min-width:768px) {
+
+  
+    .container {
+        width: 100%;
+       
+    }
+    .navbar-sm{
+        display: none;
+    }
+h1{
+    font-size: 2rem;
+}
+.logo1{
+    margin-left: 10px;
+}
+.title{
+        font-size: 1.5rem;
+    }
+
+    
+.navbar-md{
+    display: flex;
+    align-items: center;
+    background-color: #ffa8cd;
+    position:fixed;
+    z-index: 2;
+    margin-right: 5px;
+    width: 100%;
+    
+}
+
+.menu li{
+    list-style: none;
+    font-size: .80rem;
+    font-weight: bold;
+    padding-right: 1rem;
+    padding-left: 30px;
+    text-align: center;
+
+    }
+
+.menu{
+    display: flex;
+    padding: 0;
+
+}
+
+
+.menu li a{
+    text-decoration: none;
+   color: white;
+}
+.menu li a:hover{
+   color: #232946;
+}
+
+
+.menu.activado{
+    display: flex;
+}
+
+
+
+#sobre-mi{
+    width: 700px;
+    margin: 0 auto;
+}
+
+#sobre-mi p{
+    margin-top: 70px;
+    margin-right: 20px;
+}
+#sobre-mi article{ 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(1, 1fr);  
+    text-align: left;
+    }
+    
+
+    
+    
+    
+    #clases h2{
+        font-size: 35px;
+    }
+  
+    #clases .clases p{
+        color: #594a4e;
+    }
+
+    #clases .clases .textos{
+        margin-left: 9.375rem;
+        width: 60%;
+        font-size: 20px;
+    }
+    #clases .texto-inicio{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 1.890rem;
+    }
+     
+    .clases h4{
+        margin-left: 9.375rem;
+    
+    }
+    #clases figure{
+        text-align: center;
+    
+    }
+    #galeria{
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(1, 1fr); 
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem; 
+    
+    }
+    
+    
+       
+    
+    #contacto form {
+        margin: 0 auto;
+        width: 70%;
+        padding: 1em;
+        border: 0.0625rem solid #CCC;
+        border-radius: 1em;
+        
+      }
+      .social-media ul li{
+        display: inline;
+    }
+    }
+    
+
+
+
+    
+
+   
+
+
+
+
+
+
+/*--------------------------------------------escritorio medio--------------------------------------------*/
+@media (min-width:1024px) {
+    .container {
+        width: 100%;
+       
+    }
+    .navbar-sm{
+        display: none;
+    }
+header h1{
+    font-size: 35px;
+}
+header h2{
+    font-size: 30px;
+}
+
+.logo1{
+    margin-left: 20px;
+}
+    
+.navbar-md{
+    display: flex;
+    align-items: center;
+    background-color: #ffa8cd;
+    position:fixed;
+    z-index: 2;
+}
+
+.menu li{
+    list-style: none;
+    transition: 0.2s;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+
+    }
+
+
+.menu{
+    display: flex;
+    padding: 0;
+
+}
+
+
+.menu li a{
+    text-decoration: none;
+    color: #232946;
+}
+
+.name .mail .msg{
+    width: 37.5rem;
+      }
+
+.menu.activado{
+    display: flex;
+}
+
+.menu li a:hover{
+    color: #999;
+ }   
+
+
+
+
+#sobre-mi {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    margin-left: 20px ;
+    margin-right:1.875rem ;
+
+
+}
+
+.fotorama{
+    padding-top: 200px;
+}
+#sobre-mi{ 
+display: grid; 
+grid-template-columns: repeat(2, 1fr); 
+grid-template-rows: repeat(2, 1fr);
+    }
+
+#sobre-mi .misclases{
+margin-left: 0.525rem;
+padding-top: 0;
+
+} 
+
+
+  #clases{
+background-color: #f3d2c1;
+
+  }
+
+  #clases h2{
+font-size: 30px;
+color:    #232946;
+  }
+  #clases figure{
+    text-align: center;
+
+}
+#clases p{
+    width: 900px;
+   
+    color: #232946;
+   
+}
+
+#clases  h3{
+    color: #232946;
+    font-size: 1.2rem;
+    text-align: center;
+
+  }
+  .clases{
+    background-image: linear-gradient(#f3d2c1, white);
+  }
+
+  .clases{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 1fr; 
+  }
+
+.clases .img-fluid{
+    margin-top: 5rem;
+}
+.clases h4{
+    margin-left: 1.875rem;
+    font-size: 1rem;
+}
+#clases .clases .textos {
+     margin-left: 1.875rem;
+     font-size: 1rem;
+}
+.clases{
+    padding-left: 6.25rem;
+}
+#clases .numeros {
+    border: none; 
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 0;
+}
+
+
+  #galeria{
+    display: grid; 
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem; 
+    background-color: #b8c1ec;
+
+}
+
+#contacto{
+    background-color: #bae8e8;
+}
+footer{
+    background-color: #bae8e8;
+}
+#contacto form {
+    margin: 0 auto;
+    width: 37.5rem;
+    padding: 1em;
+    border: none;
+    border-radius: 1em;
+  }
+
+
+  textarea{
+      height: 18.75rem;
+  }
+
+#social-media{
+    margin-top: 150px;
+}
+  
+}
+
+
+
+/*-----------------------------------javascript estilos*/
